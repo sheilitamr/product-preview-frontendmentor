@@ -4,12 +4,41 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Vite App</title>
   </head>
   <body>
-    <h1>Hola</h1>
-    <img src="./assets/images/cute-cat.webp" alt="" />
+    <div class="main-container">
+      <div class="card-top">
+        <picture>
+          <source media="(min-width:768px )" srcset="assets/images/image-product-desktop.jpg" />
+          <source media="(min-width:360px )" srcset="assets/images/image-product-mobile.jpg" />
+          <img src="assets/images/image-product-mobile.jpg" alt="product image mobile" class="card-top__image" />
+        </picture>
+      </div>
+      <div class="card-info">
+        <h2 class="card-info__category">PERFUME</h2>
+        <h2 class="card-info__title">Gabrielle Essence Eau De Parfum</h2>
+        <p class="card-info__text">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of
+          CHANEL.
+        </p>
+        <div class="card-price">
+          <p class="card-price__discount">$149.99</p>
+          <p class="card-price__price">$169.99</p>
+        </div>
+        <button class="button">
+          <img src="assets/images/icon-cart.svg" alt="cart icon" class="cart-image" />
+          <span class="button-text">Add to Cart</span>
+        </button>
+      </div>
+    </div>
   </body>
 </html>
